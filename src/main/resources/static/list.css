@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "DejaVu Math TeX Gyre", sans-serif;
+}
+
+html {
+    height: 99vh;
+    width: 100vw;
+}
+.body {
+    background: linear-gradient(to bottom right, lightsalmon 5%, #efba38 100%);
+}
+.title {
+    padding-top: 2em;
+    text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    color: #4c3081;
+    text-shadow: 2px 10px 25px #4C3081FF,
+    1px 15px 20px #7654b6,
+    1px 5px 10px #8b63d5;
+}
+.search-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.search-input{
+    background-color: #4f3083;
+    color: lightcoral;
+    padding: 1em 1em;
+    margin-right: 15px;
+    border: 1px solid #4c3081;
+    border-radius: 1em;
+    outline: none;
+}
+.search-btn{
+    background-color: #cc3c3c;
+    padding: 0.5em 1em;
+    color: #fff;
+    border: 1px solid #4c3081;
+    border-radius: 1em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.search-btn:hover{
+    transform: scale(1.2);
+}
+
+.table {
+    margin: 2em auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+}
+
+.row {
+    border-bottom: 1px solid #ccc;
+}
+
+.column {
+    padding: 1em;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: #cc3c3c;
+}
+
+.del-btn {
+    background-color: #cc3c3c;
+    padding: 0.5em 1em;
+    color: #fff;
+    border: 1px solid #4c3081;
+    border-radius: 1em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.del-btn:hover {
+    transform: scale(1.2);
+}
+
+.add-btn,
+.top-btn {
+    background-color: #4f3083;
+    padding: 0.5em 1em;
+    color: lightcoral;
+    border: 1px solid #4c3081;
+    border-radius: 1em;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: block;
+    margin: 2em auto;
+}
+
+.add-btn:hover,
+.top-btn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3em;
+    }
+    .table {
+        width: 95%;
+    }
+    .search-form {
+        flex-direction: column;
+    }
+    .search-input {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+}

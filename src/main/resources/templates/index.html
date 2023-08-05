@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lookify</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/hover.css">
 </head>
-<body>
-  <h1>LOOKIFY</h1>
-  <a th:href="@{/songs/all}">Iniciar Aplicación</a>
+<body class="body">
+<div class="birds-container">
+    <img class="birds-img" src="https://pluspng.com/img-png/flying-bird-png-bird-silhouette-png-image-3497-1031.png" alt="">
+    <span class="title">LOOKIFY</span>
+    <img class="birds-img moveUpDown" src="https://pluspng.com/img-png/flying-bird-png-bird-silhouette-png-image-3497-1031.png" alt="">
+</div>
+  <form th:action="@{/songs/all}" method="get">
+      <button class="btn shadow-drop-center" type="submit">Iniciar Aplicación <span class="svg-container"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+  </svg></span></button>
+  </form>
+<div class="palm-container">
+    <img class="palm-img hvr-buzz" src="https://orig00.deviantart.net/807b/f/2014/152/2/7/palmeras_png_by_devonnelove-d7kmkwy.png" alt="palmera">
+    <img class="palm-img hvr-buzz" src="https://orig00.deviantart.net/807b/f/2014/152/2/7/palmeras_png_by_devonnelove-d7kmkwy.png" alt="palmera">
+</div>
 </body>
 </html>

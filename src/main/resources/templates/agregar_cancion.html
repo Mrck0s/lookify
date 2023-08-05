@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Agregar Nueva Canción</title>
+  <link rel="stylesheet" href="/add.css">
 </head>
-<body>
+<body class="">
 <h1>Agregar Nueva Canción</h1>
 <form th:action="@{/songs/new}" method="post" th:object="${song}">
   <label>Título: <input type="text" th:field="*{titulo}" required></label><br>
